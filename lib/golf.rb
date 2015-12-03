@@ -9,13 +9,11 @@ class Golf
       s = n if s.empty?
       @a.push(s)
     end
-    @cache = @a
+     @a
   end
-
-
-  def self.hole2(string)
-     s = string.split(' ')
-     s.map do |p|
+  def self.hole2(s)
+     a = s.split(' ')
+     a.map do |p|
       p[0]
      end.join('')
   end
