@@ -12,9 +12,7 @@ class Golf
      @a
   end
   def self.hole2(s)
-     a = s.split(' ')
-     a.map do |p|
-      p[0]
-     end.join('')
+      a = s.split(' ')
+      a.map! { |p| p[0]}.join
   end
 end
